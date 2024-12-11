@@ -65,6 +65,40 @@ h1 {
   font-weight: bold;
 }
 
+.instructions {
+  margin: 20px 0;
+  padding: 15px;
+  background: var(--board-color);
+  border-radius: 5px;
+  color: var(--text-color);
+}
+
+.instructions p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.instructions .goal {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.instructions ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.instructions li {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.highlight {
+  font-weight: bold;
+  color: var(--tile-64-color);
+}
+
 .controls {
   display: flex;
   gap: 10px;
@@ -72,7 +106,10 @@ h1 {
   flex-wrap: wrap;
 }
 
-button {
+button, .github-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -81,10 +118,15 @@ button {
   cursor: pointer;
   transition: opacity 0.2s;
   font-size: 16px;
+  text-decoration: none;
 }
 
-button:hover {
+button:hover, .github-btn:hover {
   opacity: 0.8;
+}
+
+button i, .github-btn i {
+  font-size: 16px;
 }
 
 .score-container {
@@ -192,8 +234,12 @@ button:hover {
     font-size: 18px;
   }
 
-  button {
+  button, .github-btn {
     padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  button i, .github-btn i {
     font-size: 14px;
   }
 
@@ -213,6 +259,19 @@ button:hover {
     padding: 8px;
     margin-top: 10px;
   }
+
+  .instructions {
+    font-size: 14px;
+    padding: 10px;
+  }
+  
+  .instructions p {
+    font-size: 14px;
+  }
+  
+  .instructions li {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 350px) {
@@ -224,8 +283,12 @@ button:hover {
     font-size: 16px;
   }
 
-  button {
+  button, .github-btn {
     padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  button i, .github-btn i {
     font-size: 12px;
   }
 

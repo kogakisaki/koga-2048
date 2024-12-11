@@ -14,6 +14,7 @@ function showGameControls() {
   document.querySelector(".game-container").style.display = "block";
   document.getElementById("copyLinkBtn").style.display = "block";
   document.getElementById("shareImageBtn").style.display = "block";
+  document.getElementById("instructions").style.display = "none";
 }
 
 function hideGameControls() {
@@ -21,6 +22,7 @@ function hideGameControls() {
   document.querySelector(".game-container").style.display = "none";
   document.getElementById("copyLinkBtn").style.display = "none";
   document.getElementById("shareImageBtn").style.display = "none";
+  document.getElementById("instructions").style.display = "block";
 }
 
 async function startNewGame() {
