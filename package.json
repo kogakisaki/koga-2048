@@ -1,0 +1,26 @@
+{
+  "name": "koga-2048",
+  "version": "1.0.2",
+  "description": "a simple 2048 game with many basic functions, with support for interaction through API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "canvas": "^2.11.2",
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kogakisaki/koga-2048.git"
+  },
+  "author": "kogakisaki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kogakisaki/koga-2048/issues"
+  },
+  "homepage": "https://github.com/kogakisaki/koga-2048#readme"
+}
