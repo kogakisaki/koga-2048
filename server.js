@@ -521,7 +521,7 @@ app.get("/api/games/:gameId/image", async (req, res) => {
 
       // Game Over text
       ctx.fillStyle = currentTheme.text;
-      ctx.font = "bold 60px Arial";
+      ctx.font = "bold 40px Arial";
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
       ctx.fillText(
